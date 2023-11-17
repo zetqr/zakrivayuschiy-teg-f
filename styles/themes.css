@@ -5,8 +5,6 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-    --main-font: 'Inter', Arial, sans-serif;
-    --accent-font: 'PressStart2P-Regular', Montserrat, sans-serif;
     --main-text-thickness: 400;
     --heading-thickness: 700;
     --background-color: #1a1a1a;
@@ -22,8 +20,6 @@
 }
 
 :root.theme-dark {
-    --main-font: 'Inter', Arial, sans-serif;
-    --accent-font: 'PressStart2P-Regular', Montserrat, sans-serif;
     --main-text-thickness: 465;
     --heading-thickness: 700;
     --background-color: #004306;
@@ -40,8 +36,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-        --main-font: 'Inter', Arial, sans-serif;
-        --accent-font: 'PressStart2P-Regular', Montserrat, sans-serif;
         --main-text-thickness: 400;
         --heading-thickness: 700;
         --background-color: #1a1a1a;
@@ -59,8 +53,6 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-        --main-font: 'Inter', Arial, sans-serif;
-        --accent-font: 'PressStart2P-Regular', Montserrat, sans-serif;
         --main-text-thickness: 465;
         --heading-thickness: 700;
         --background-color: #004306;

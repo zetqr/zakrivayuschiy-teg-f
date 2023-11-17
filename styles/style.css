@@ -583,8 +583,8 @@
   0% {
     filter: hue-rotate(0deg) blur(0);
   }
-  50% {
-    filter: hue-rotate(120deg) blur(50px) drop-shadow(100px 100px 50px var(--accent-color)) drop-shadow(-100px -100px 50px var(--accent-color)) opacity(.1);
+  70% {
+    filter: hue-rotate(220deg) blur(50px) drop-shadow(100px 100px 50px var(--accent-color)) drop-shadow(-100px -100px 50px var(--accent-color)) opacity(.3);
   }
 
   100% {
