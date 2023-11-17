@@ -164,7 +164,6 @@
   position: relative;
   border-block-end: 2px solid var(--accent-color);
   border-block-start: 2px solid var(--accent-color);
-  overflow: hidden;
 }
 
 .card__image {
@@ -576,7 +575,7 @@
 }
 
 .givup-image {
-  filter: hue-rotate(-190deg) brightness(150%);
+  filter: saturate(200%) brightness(80%);
 }
 
 .here-image {
@@ -590,7 +589,7 @@
   }
 
   50% {
-    filter: hue-rotate(120deg) blur(5px) drop-shadow(100px 100px 50px var(--accent-color)) drop-shadow(-100px -100px 50px var(--accent-color)) opacity(.2);
+    filter: hue-rotate(120deg) blur(5px) drop-shadow(30px 30px 30px var(--accent-color)) drop-shadow(-30px -30px 30px var(--accent-color)) opacity(.2);
   }
 
   70% {
@@ -604,26 +603,26 @@
 
 @keyframes click {
   0% {
-    filter: drop-shadow(0 0 150px var(--accent-color)) hue-rotate(0deg);
+    filter: drop-shadow(0 0 10px var(--accent-color)) hue-rotate(0deg);
   }
 
   15% {
-    filter: drop-shadow( 0 0 50px var(--accent-color)) hue-rotate(60deg);
+    filter: drop-shadow( 0 0 15px var(--accent-color)) hue-rotate(60deg);
   }
 
  40% {
-    filter: drop-shadow(0 0 100px var(--accent-color)) hue-rotate(160deg);
+    filter: drop-shadow(0 0 10px var(--accent-color)) hue-rotate(160deg);
   }
 
   60% {
-    filter: drop-shadow(0 0 200px var(--accent-color)) hue-rotate(210deg);
+    filter: drop-shadow(0 0 13px var(--accent-color)) hue-rotate(210deg);
   }
 
   80% {
-    filter: drop-shadow(0 0 50px var(--accent-color)) hue-rotate(300deg);
+    filter: drop-shadow(0 0 20px var(--accent-color)) hue-rotate(300deg);
   }
 
   100% {
-    filter: drop-shadow(0 0 150px var(--accent-color)) hue-rotate(360deg);
+    filter: drop-shadow(0 0 15px var(--accent-color)) hue-rotate(360deg);
   }
 }
