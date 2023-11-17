@@ -17,6 +17,7 @@
 .page {
   display: flex;
   flex-direction: column;
+  font-variation-settings: 'wght' var(--main-text-thickness);
   place-items: center;
   min-block-size: 100dvb;
   font-family: var(--main-font);
@@ -163,14 +164,14 @@
   position: relative;
   border-block-end: 2px solid var(--accent-color);
   border-block-start: 2px solid var(--accent-color);
+  overflow: hidden;
 }
 
 .card__image {
   z-index: 0;
-  inline-size: 100%;
-  justify-self: center;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  aspect-ratio: 1/1;
 }
 
 .label-text {
@@ -551,7 +552,7 @@
 }
 
 .prepare-image {
-  filter: contrast(110%) saturate(150%);
+  filter: contrast(150%);
 }
 
 .nope-image {
@@ -559,24 +560,29 @@
 }
 
 .possible-image {
-  filter: hue-rotate(-130deg);
+  filter: hue-rotate(-100deg);
 }
 
 .chase-image {
-  filter: invert(100%);
+  filter: invert(100%) grayscale(100%);
 }
 
 .people-image {
-  filter: brightness(110%) sepia(80%);;
+  filter:  saturate(120%) sepia(30%);
 }
 
 .strategy-image {
-  filter: grayscale(110%) contrast(200%);
+  animation: click 2s ease-in-out infinite;
 }
 
 .givup-image {
   filter: hue-rotate(-190deg) brightness(150%);
 }
+
+.here-image {
+  animation: changeColors 5s ease-in-out infinite;
+}
+
 
 @keyframes changeColors {
   0% {
@@ -596,6 +602,28 @@
   }
 }
 
-.here-image {
-  animation: changeColors 5s ease-in-out infinite;
+@keyframes click {
+  0% {
+    filter: drop-shadow(0 0 150px var(--accent-color)) hue-rotate(0deg);
+  }
+
+  15% {
+    filter: drop-shadow( 0 0 50px var(--accent-color)) hue-rotate(60deg);
+  }
+
+ 40% {
+    filter: drop-shadow(0 0 100px var(--accent-color)) hue-rotate(160deg);
+  }
+
+  60% {
+    filter: drop-shadow(0 0 200px var(--accent-color)) hue-rotate(210deg);
+  }
+
+  80% {
+    filter: drop-shadow(0 0 50px var(--accent-color)) hue-rotate(300deg);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 150px var(--accent-color)) hue-rotate(360deg);
+  }
 }
