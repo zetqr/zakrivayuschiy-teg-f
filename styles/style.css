@@ -20,7 +20,6 @@
   place-items: center;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: 'wght' var(--main-text-thickness);
   color: var(--accent-color);
   background-color: var(--background-color);
   background-size: cover;
