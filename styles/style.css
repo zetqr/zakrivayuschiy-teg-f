@@ -206,7 +206,7 @@
 
 .section__card-content-paragraph {
   font-size: var(--section-text-size);
-  margin: 15px;
+  margin: 25px;
   font-weight: var(--main-text-thickness);
   justify-self: end;
 }
