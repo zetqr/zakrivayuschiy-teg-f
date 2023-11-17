@@ -9,8 +9,8 @@
     --gradient-pattern-x: repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
     --gradient-pattern-y: repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
     --gradient-pattern-linear: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-    --header-title-size: clamp(3.0625rem, 2.7808rem + 1.4085vw, 4.0625rem);;
-    --header-heading-size: clamp(0.875rem, 0.7165rem + 0.7923vw, 1.4375rem);;
+    --header-title-size: clamp(3.0625rem, 2.7808rem + 1.4085vw, 4.0625rem);
+    --header-heading-size: clamp(0.875rem, 0.7165rem + 0.7923vw, 1.4375rem);
     --header-description-size: 14px;
     --section-text-size: 18px;
     --general-text-size: 14px;

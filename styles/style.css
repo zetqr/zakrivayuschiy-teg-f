@@ -406,11 +406,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
   background-color: var(--themes-background);
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font);
-  font-weight: normal;
+  font-weight: 400;
   font-size: var(--button-text-size);
   padding: 15px 21px 15px 15px;
   transition: box-shadow 0.3s ease;
@@ -486,7 +485,7 @@
   font-family: var(--accent-font);
   font-size: var(--general-text-size);
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
  }
@@ -507,7 +506,7 @@
 .dialog-button {
   position: relative;
   font-family: var(--accent-font);
-  font-weight: normal;
+  font-weight: 400;
   font-size: var(--button-text-size);
   background-color: transparent;
   border: 2px solid var(--accent-color);
