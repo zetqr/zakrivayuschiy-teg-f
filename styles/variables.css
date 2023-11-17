@@ -5,7 +5,6 @@
     --main-text-thickness: 400;
     --background-color: #fff;
     --themes-background: #fff;
-    --accent-color: #000;
     --gradient-pattern-x: repeating-linear-gradient(90deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
     --gradient-pattern-y: repeating-linear-gradient(0deg, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px);
     --gradient-pattern-linear: linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
@@ -16,6 +15,7 @@
     --general-text-size: 14px;
     --button-text-size: 14px;
     --button-text-color: #fff;
+    --accent-color: #000;
     --animation-start-color: rgba(0 0 0 / 0);
     --sparks-color: #ff0000;
     --fill-contour-color: rgba(0 0 0 / 1);

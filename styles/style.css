@@ -45,7 +45,7 @@
 
 .header__card {
   background-color: var(--themes-background);
-  outline: 3px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
   max-inline-size: 693px;
   inline-size: 100%;
 }
@@ -149,7 +149,7 @@
   grid-template-rows: min-content min-content min-content min-content;
   font-family: var(--main-font);
   font-size: var(--section-text-size);
-  outline: 3px solid var(--accent-color);
+  outline: 2px solid var(--accent-color);
   padding-block-end: 25px;
 }
 
@@ -162,13 +162,13 @@
 
 .image-wrapper {
   position: relative;
+  border-block-end: 2px solid var(--accent-color);
+  border-block-start: 2px solid var(--accent-color);
 }
 
 .card__image {
   z-index: 0;
   inline-size: 100%;
-  border-block-end: 2px solid var(--accent-color);
-  border-block-start: 2px solid var(--accent-color);
   justify-self: center;
   object-fit: cover;
   aspect-ratio: 1/1;
@@ -581,13 +581,17 @@
 
 @keyframes changeColors {
   0% {
-    filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg) blur(0);
   }
+  50% {
+    filter: hue-rotate(120deg) blur(50px) drop-shadow(100px 100px 50px var(--accent-color)) drop-shadow(-100px -100px 50px var(--accent-color)) opacity(.1);
+  }
+
   100% {
-    filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg) blur(0);
   }
 }
 
 .here-image {
-  animation: changeColors 10s linear infinite;
+  animation: changeColors 5s ease-in-out infinite;
 }
