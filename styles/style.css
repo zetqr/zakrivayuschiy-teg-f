@@ -213,7 +213,6 @@
   font-size: var(--section-text-size);
   margin: 0px 25px 25px;
   font-variation-settings: 'wght' var(--main-text-thickness, 400);
-  justify-self: end;
 }
 
 .card__buttons {
